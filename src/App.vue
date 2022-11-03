@@ -5,6 +5,9 @@
     <router-link to="/new">Crear Nuevo Restaurante</router-link>
   </nav>
   <router-view/>
+  <div class="alert alert-primary" role="alert">
+    A simple primary alert—check it out!
+  </div>
 </template>
 
 <style lang="scss">
