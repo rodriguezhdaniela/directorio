@@ -1,34 +1,18 @@
 <template>
-  <nav>
-    <router-link to="/">Inicio</router-link> |
-    <router-link to="/search">Buscar Restaurante</router-link> |
-    <router-link to="/new">Crear Nuevo Restaurante</router-link>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container justify-content-center">
+      <div class="btn-group" role="group">
+        <router-link class="btn btn-success" to="/">Inicio</router-link>
+        <router-link class="btn btn-success" to="/search">Buscar Restaurante</router-link>
+        <router-link class="btn btn-success" to="/new">Crear Nuevo Restaurante</router-link>
+      </div>    
+    </div>
   </nav>
   <router-view/>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+<style lang="scss" scoped>
+.menu {
+  margin-top:20px;
 }
 </style>
